@@ -123,13 +123,13 @@ body{
 .sessao-pipeline #pipe{
     height: 100%;
     width: 15vw;
-    background-image: url('../images/pipe.png');
-    background-size:contain;
-    background-repeat: no-repeat;
     position: absolute;
     bottom: -52px;
     right: -32px;
     z-index: -1;
+    object-fit: cover;
+    object-position: left;
+    max-height: 100vh;
 }
 .sessao-pipeline .container{
     padding: 52px 0px;
@@ -177,6 +177,7 @@ body{
 .sessao-pipeline .cards .card.bg-white{
     background-color: #FFF;
     color: #000;
+    border: 1px solid #000;
     padding: 26px 16px;
 }
 
@@ -509,4 +510,48 @@ body{
 .sessao-mercado-petroquimica .card p{
     margin-top: 0;
     margin-right: 12px;
+}
+
+/* SESSAO SUSTENTABILIDADE */
+.sessao-sutentabilidade-petroquimica .container{
+    padding: 128px 0;
+    flex-direction: column;
+    align-items: center;
+}
+.sessao-sutentabilidade-petroquimica .titulo{
+    min-width: 300px;
+    display: flex;
+    font-family: 'Epilogue';
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 12px;
+    width: 35%;
+    text-align: center;
+}
+.sessao-sutentabilidade-petroquimica .desafio-sustentabilidade{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+    text-align: center;
+    justify-content: center;
+}
+.sessao-sutentabilidade-petroquimica .desafios, .sessao-sutentabilidade-petroquimica .sustentabilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.sessao-sutentabilidade-petroquimica h2{
+    font-family: 'Epilogue';
+}
+.desafio-sustentabilidade .desafio, .desafio-sustentabilidade .sustentabilidade{
+    background-color: #FFF;
+    border-radius: 8px;
+    padding-inline: 12px;
+    width: 40vw;
+    min-width: 400px;
+    max-width: 500px;
+    text-align: left;
+    color: #000;
 }
