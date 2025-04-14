@@ -7,7 +7,7 @@ body{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     background-color: #161616;
     color: #FFF;
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(16px, 1vw, 20px);
 }
 .container{
     display: flex;
@@ -41,6 +41,9 @@ body{
     color: #FFF;
     text-decoration: none;
     transition: .3s;
+}
+.nav .link.active{
+    font-weight: bold;
 }
 .nav .link:hover{
     color: #F6C500;
@@ -456,7 +459,7 @@ body{
     background-color: #F7F7F7;
 }
 .sessao-importancia-petroquimica .container{
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #000;
@@ -466,6 +469,19 @@ body{
     margin: 0;
     margin-bottom: 62px;
     font-size: 2em;
+}
+.sessao-importancia-petroquimica .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.sessao-importancia-petroquimica .card{
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 180px;
 }
 
 /* SESSAO MERCADO */
@@ -548,10 +564,137 @@ body{
 .desafio-sustentabilidade .desafio, .desafio-sustentabilidade .sustentabilidade{
     background-color: #FFF;
     border-radius: 8px;
-    padding-inline: 12px;
+    padding: 0 12px;
     width: 40vw;
     min-width: 400px;
     max-width: 500px;
     text-align: left;
     color: #000;
+}
+
+.desafio-sustentabilidade .desafio p, .desafio-sustentabilidade .sustentabilidade p {
+    margin: 8px 0;
+}
+
+
+/* SOBRE NÓS */
+.sessao-heroi.sobre-nos{
+    background: #252020;
+    height: 100vh;
+    overflow: hidden;
+}
+.sessao-heroi.sobre-nos .container{
+    width: 80%;
+    backdrop-filter: none;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+}
+.sessao-heroi.sobre-nos .texto-chave{
+    flex: 1;
+    color: #FFF;
+    align-items: flex-start;
+    width: 10px;
+}
+.sessao-heroi.sobre-nos .texto-chave h1{
+    margin-bottom: 0;
+}
+.sessao-heroi.sobre-nos .texto-chave span{
+    background: none;
+    font-weight: bold;
+    color: #FFF;
+}
+.sessao-heroi.sobre-nos .texto-chave .btn{
+    border: 1px solid #FFF;
+    background: none;
+    color: #FFF;
+    font-weight: normal;
+}
+.sessao-heroi.sobre-nos img{
+    flex: 1;
+    width: 100%;
+}
+
+/* SESSAO QUEM SOMOS */
+.sessao-quem-somos{
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.sessao-quem-somos .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 42px;
+}
+.sessao-quem-somos img{
+    flex: 1;
+    min-width: 200px;
+}
+.sessao-quem-somos .conteudo{
+    flex: 1;
+    min-width: 300px;
+}
+
+/* SESSAO SERVICOS */
+.sessao-nossos-servicos{
+    padding: 60px 0;
+    padding-bottom: 120px;
+}
+.sessao-nossos-servicos .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.sessao-nossos-servicos .servicos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.sessao-nossos-servicos .servicos .servico{
+    flex: 1;
+    border: 1px solid #FFF;
+    padding: 24px;
+    border-radius: 8px;
+    transition: .3s;
+    min-width: 220px;
+}
+.sessao-nossos-servicos .servicos .servico p{
+    flex: 1;
+}
+
+.sessao-nossos-servicos .servicos .servico:hover{
+    box-shadow: 0 0 10px #FFF;
+}
+
+
+/* SESSAO NOSSA EQUIPE */
+.sessao-nossa-equipe{
+    background-color: #FFF;
+    color: #000;
+    padding: 120px 0;
+}
+.sessao-nossa-equipe .container{
+    flex-direction: column;
+}
+.sessao-nossa-equipe .equipe{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.sessao-nossa-equipe .equipe .membro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 220px;
+    height: 100%;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 100%;
+}
+.sessao-nossa-equipe .equipe .membro h2{
+    margin-bottom: 0px;
 }
