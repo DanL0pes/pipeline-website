@@ -583,6 +583,7 @@ body{
 }
 
 
+/* SOBRE-NOS HTML */
 /* SOBRE NÓS */
 .sessao-heroi.sobre-nos{
     background: #252020;
@@ -708,7 +709,42 @@ body{
     margin-bottom: 0px;
 }
 
+/* DEPOIMENTOS SESSAO */
+.sessao-depoimentos{
+    padding: 128px 0;
+}
+.sessao-depoimentos .container{
+    flex-direction: column;
+}
+.sessao-depoimentos .depoimentos{
+    display: flex;
+    gap: 12px;
+}
+.sessao-depoimentos .depoimentos .depoimento{
+    border-radius: 8px;
+    border: 1px solid #F6C500;
+    padding: 24px;
+}
 
+/* SESSAO PARCEIROS */
+.sessao-parceiros{
+    padding-bottom: 128px;
+}
+.sessao-parceiros .container{
+    flex-direction: column;
+}
+.sessao-parceiros .logos-parceiros{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sessao-parceiros .logos-parceiros img{
+    width: 320px;
+    object-fit: cover;
+}
+
+/* HTML PROJETO */
 /* SESSAO PROJETO */
 .sessao-heroi.projeto {
     min-height: 100vh;
@@ -738,7 +774,171 @@ body{
     width: 100%;
 }
 
+/* SESSAO MONITORE E ALERTAS*/
+.sessao-monitore{
+    padding-top: 128px;
+    padding-bottom: 64px;
+    border-bottom: 1px dashed #000;
+}
+.sessao-alertas{
+    padding-top: 64px;
+    padding-bottom: 128px;
+}
+.sessao-monitore, .sessao-alertas{
+    background-color: #FFF;
+    color: #000;
+}
+.sessao-monitore .container, .sessao-alertas .container{
+    gap: 42px;
+}
+.sessao-monitore .lado, .sessao-alertas .lado {
+    flex: 1;
+}
+.sessao-monitore .lado.image img, .sessao-alertas .lado.image img{
+    width: 100%;
+    border-radius: 8px;
+}
+.sessao-monitore li span, .sessao-alertas li span{
+    font-weight: bold;
+}
 
+/* ORÇAMENTO SESSAO - made by Luka*/
+.sessao-orcamento{
+    background-image:url('../images/bg-calculadora.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.sessao-orcamento .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    backdrop-filter: brightness(0.3);
+}
+.sessao-orcamento .left{
+    flex: 1;
+    padding: 128px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 20px;
+    border-color: black;
+    border-radius: 15px;
+    justify-content: center;
+    box-shadow: 0 0 10px #00000060;
+}
+.sessao-orcamento .left input{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    outline: none;
+    transition: 0.2s;
+}
+.sessao-orcamento .left button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F6C500;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sessao-orcamento .left button:hover {
+    background-color: #000;
+    outline: 1px solid #F6C500;
+    transform: scale(1.02);
+}
+.sessao-orcamento .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius : 18px;
+
+}
+.sessao-orcamento .txtFinal table {
+    width: 90%;
+    max-width: 500px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.sessao-orcamento .txtFinal th {
+    background-color: #222;
+    color: white;
+    font-size: 1.2rem;
+    padding: 14px;
+    text-align: center;
+    border-bottom: 2px solid #ff4d4d;
+}
+.sessao-orcamento .txtFinal td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #444;
+    font-size: 0.95rem;
+}
+.sessao-orcamento .txtFinal tr:last-child td {
+    border-bottom: none;
+}
+.sessao-orcamento .txtFinal span {
+    background-color: #ff2626;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+.sessao-orcamento .txtFinal button {
+    padding: 8px 16px;
+    background-color: #ff2626;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+.sessao-orcamento .txtFinal button:hover {
+    background-color: #c01d1d;
+    transform: scale(1.03);
+}
+.txtFinal a {
+    text-decoration: none;
+}
+.sessao-orcamento .txtFinal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* SESSAO DIFERENCIAIS */
+.sessao-diferenciais{
+    padding: 128px 0;
+}
+.sessao-diferenciais .container{
+    flex-direction: column;
+}
+.sessao-diferenciais .cards{
+    display: flex;
+    gap: 24px;
+}
+.sessao-diferenciais .card{
+    flex: 1;
+    padding: 24px;
+    border: 1px solid #FFF;
+    border-radius: 8px;
+}
+
+/* HTML LOGIN */
 /* SESSAO LOGIN */
 .sessao-login{
     height: 100vh;
@@ -756,12 +956,15 @@ body{
 }
 .sessao-login .container .lado{
     position: relative;
-    color: #000;
+    color: #FFF;
     flex:1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 82px;
+}
+.sessao-login .lado.form{
+    background-color: #000;
 }
 .sessao-login .formulario{
     display: flex;
@@ -776,6 +979,8 @@ body{
     color: rgb(238, 64, 64);
 }
 .sessao-login .formulario input{
+    color: #FFF;
+    font-family: 'Poppins';
     padding: 8px;
     margin-bottom: 12px;
     border-radius: 4px;
@@ -783,14 +988,15 @@ body{
     border: 1px solid #c2c2c2;
 }
 .sessao-login .formulario input:focus{
-    box-shadow: 0 0 5px #FFF;
+    box-shadow: 0 0 5px 1px #F6C500;
+    outline: 1px solid #F6C500;
 }
 .sessao-login .formulario button{
     padding: 12px 48px;
     width: 100%;
     font-weight: bold;
-    background-color: #000;
-    color: #FFF;
+    background-color: #F6C500;
+    color: #000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -798,11 +1004,11 @@ body{
     transition: .3s;
 }
 .sessao-login .formulario button:hover{
-    background-color: #F6C500;
+    background-color: #FFF;
 }
 .sessao-login .formulario a{
     margin-top: 12px;
-    color: #000;
+    color: #FFF;
     font-size: 0.9em;
     text-decoration: none;
     align-self: center;
@@ -813,20 +1019,6 @@ body{
     scale: 1.075;
 }
 .sessao-login .lado.cadastro{
-    overflow: hidden;
-}
-.sessao-login .lado.cadastro .bg-img{
-    top: -60px;
-    left: 120px;
-    position: absolute;
-    width: 100%;
-    height: 175%;
-    rotate: 10deg;
-    object-fit: cover;
-    object-position: left;
-    z-index: 0;
-}
-
-.sessao-login .lado.cadastro .card-img{
-    z-index: 1;
+    background-image: url('../images/bg-petroquimica.jpg');
+    background-size: cover;
 }
