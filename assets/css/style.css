@@ -784,21 +784,38 @@ body{
     padding-top: 64px;
     padding-bottom: 128px;
 }
-.sessao-monitore, .sessao-alertas{
+.sessao-monitore{
     background-color: #FFF;
     color: #000;
 }
-.sessao-monitore .container, .sessao-alertas .container{
+.sessao-alertas{
+    background-color: #FFF;
+    color: #000;
+}
+.sessao-monitore .container{
     gap: 42px;
 }
-.sessao-monitore .lado, .sessao-alertas .lado {
+.sessao-alertas .container{
+    gap: 42px;
+}
+.sessao-monitore .lado{
     flex: 1;
 }
-.sessao-monitore .lado.image img, .sessao-alertas .lado.image img{
+.sessao-alertas .lado {
+    flex: 1;
+}
+.sessao-monitore .lado.image img{
     width: 100%;
     border-radius: 8px;
 }
-.sessao-monitore li span, .sessao-alertas li span{
+.sessao-alertas .lado.image img{
+    width: 100%;
+    border-radius: 8px;
+}
+.sessao-monitore li span{
+    font-weight: bold;
+}
+.sessao-alertas li span{
     font-weight: bold;
 }
 
